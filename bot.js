@@ -1,18 +1,7 @@
-const http = require("http");
 const config = require("./config/config");
 const twit = require("twit");
 const T = twit(config);
 
-const host = "localhost";
-const port = process.env.PORT || 80;
-const requestListener = (req, res) => {
-  res.writeHead(200);
-  res.end();
-};
-let app = http.createServer(requestListener);
-app.listen(port, host, () =>
-  console.log(`Server is running on http://${host}:${port}`)
-);
 console.log("Bot started - " + new Date());
 
 retweet = () => {
