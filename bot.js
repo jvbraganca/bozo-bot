@@ -2,7 +2,7 @@ const config = require("./config/config");
 const twit = require("twit");
 const T = twit(config);
 
-console.log("Bot started - " + new Date());
+console.log(`Bot started - ${new Date()}`);
 
 retweet = () => {
   let params = {
