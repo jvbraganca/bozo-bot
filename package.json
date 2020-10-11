@@ -1,0 +1,30 @@
+{
+  "name": "bozo-bot",
+  "version": "1.0.0",
+  "description": "A bot to retweet every tweet containing: FORA BOLSONARO",
+  "main": "bot.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "twit": "^2.2.11",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/botbozo.git"
+  },
+  "keywords": [
+    "Twitter",
+    "Bot",
+    "BozoBot"
+  ],
+  "author": "Joao Braganca",
+  "license": "ISC",
+  "engines": {
+    "node": "10.19.x"
+  }
+}
