@@ -11,13 +11,13 @@ console.log(`Bot started - ${new Date()}`);
 
 retweet = () => {
   let params = {
-    q: "fora bolsonaro",
+    q: "fora bolsonaro OR #CoragemMaia",
     count: 100,
   };
   T.get("search/tweets", params, (err, data, response) => {
     if (!err) {
       try {
-        const regex = /fora.bolsonaro|forabolsonaro|fora..bolsonaro/gim;
+        const regex = /fora.bolsonaro|forabolsonaro|fora..bolsonaro|coragem maia|coragemmaia|coragem.maia/gim;
         for (let dat of data.statuses) {
           if (regex.exec(dat.text)) {
             let retweetId = dat.id_str;
